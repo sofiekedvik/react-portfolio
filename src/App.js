@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './Base/Header.js';
 import Footer from './Base/Footer.js';
+import Main from './Base/Main.js';
 
 class App extends Component {
 
@@ -59,6 +60,7 @@ class App extends Component {
                         {status.hero[status.heroNumber].text}
                     </p>
                 </section>
+                <Main />
                 <Footer changeHero={this.changeHero} heroNumber={status.heroNumber}></Footer>
             </div>
         );
