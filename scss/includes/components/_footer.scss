@@ -1,0 +1,10 @@
+.footer {
+    text-align: center;
+    background: grey;
+    color: white;
+    padding: 20px 0;
+
+    @media #{$breakpoint-medium} {
+        text-align: left;
+    }
+}

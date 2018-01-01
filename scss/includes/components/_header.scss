@@ -1,0 +1,25 @@
+.header {
+    padding: 10px 0 0;
+
+    &__logo {
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    @media #{$breakpoint-medium} {
+        padding: 10px;
+        .container {
+            padding: 0px 20px;
+        }
+
+        &__logo {
+            width: 150px;
+            text-align: left;
+        }
+    }
+}

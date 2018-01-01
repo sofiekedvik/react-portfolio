@@ -4,7 +4,7 @@ import About from '../Pages/About';
 import Home from '../Pages/Home';
 
 const Main = () => (
-    <main>
+    <main className="section">
         <Switch>
             <Route exact path='/' component={Home}/>
             <Route path='/about' component={About}/>

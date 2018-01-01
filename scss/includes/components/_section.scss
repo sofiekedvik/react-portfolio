@@ -1,0 +1,6 @@
+.section {
+    padding: 20px 10px;
+    @media #{$breakpoint-medium} {
+        padding: 40px 20;
+    }
+}

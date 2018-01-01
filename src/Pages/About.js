@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
 const About = () => (
-    <div>
-        <h2>About me</h2>
+    <div className="container">
+        <h2>My story</h2>
         <div>
-            <p> Hello this is a page about a page.</p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem asperiores, neque odio provident a mollitia voluptatum hic fugit tempora aliquid labore distinctio quas molestias placeat adipisci, est totam voluptas rerum! </p>
         </div>
     </div>
 )

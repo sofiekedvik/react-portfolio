@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import Header from './Base/Header.js';
 import Footer from './Base/Footer.js';
 import Main from './Base/Main.js';
@@ -54,11 +53,13 @@ class App extends Component {
         return (
             <div className="App">
                 <Header changeHero={this.changeHero} heroNumber={status.heroNumber}></Header>
-                <section>
-                    <h2>{status.hero[status.heroNumber].heading}</h2>
-                    <p>
+                <section className="section hero">
+                    <div className="container">
+                        <h1>{status.hero[status.heroNumber].heading}</h1>
+                        <p>
                         {status.hero[status.heroNumber].text}
-                    </p>
+                        </p>
+                    </div>
                 </section>
                 <Main />
                 <Footer changeHero={this.changeHero} heroNumber={status.heroNumber}></Footer>
