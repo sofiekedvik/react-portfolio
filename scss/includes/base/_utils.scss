@@ -20,4 +20,45 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
+
+    &--30 {
+        width: 30%;
+        background: $color--red;
+        @include contentAfter('30%');
+    }
+    &--40 {
+        width: 40%;
+        background: $color--orange;
+        @include contentAfter('40%');
+    }
+    &--50 {
+        background: $color--green;
+        width: 50%;
+        @include contentAfter('50%');
+    }
+    &--60 {
+        width: 60%;
+        background: $color--yellow;
+        @include contentAfter('60%');
+    }
+    &--70 {
+        width: 70%;
+        background: $color--turqoise;
+        @include contentAfter('70%');
+    }
+    &--80 {
+        width: 80%;
+        background: $color--blue-dark;
+        @include contentAfter('80%');
+    }
+    &--90 {
+        width: 90%;
+        background: $color--blue;
+        @include contentAfter('90%');
+    }
+    &--100 {
+        width: 100%;
+        background: $color--blue;
+        @include contentAfter('100%');
+    }
 }

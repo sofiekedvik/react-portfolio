@@ -455,7 +455,7 @@ img {
   vertical-align: middle; }
 
 html, body {
-  font-family: "helvetica", sans-serif;
+  font-family: "Slabo 27px", "helvetica", sans-serif;
   line-height: 1.3; }
 
 .h1, h1 {
@@ -529,6 +529,11 @@ p {
   padding-right: 1em;
   margin: 0 auto; }
 
+.row {
+  margin-left: -1em;
+  margin-right: -1em;
+  width: 100%; }
+
 [class*='col-'] {
   float: left;
   padding: 1em;
@@ -584,6 +589,86 @@ p {
   background-size: contain;
   background-repeat: no-repeat; }
 
+.u--30 {
+  width: 30%;
+  background: #e74c3c;
+  position: relative; }
+  .u--30:after {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    content: "30%"; }
+
+.u--40 {
+  width: 40%;
+  background: #f39c12;
+  position: relative; }
+  .u--40:after {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    content: "40%"; }
+
+.u--50 {
+  background: #2ecc71;
+  width: 50%;
+  position: relative; }
+  .u--50:after {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    content: "50%"; }
+
+.u--60 {
+  width: 60%;
+  background: #f1c40f;
+  position: relative; }
+  .u--60:after {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    content: "60%"; }
+
+.u--70 {
+  width: 70%;
+  background: #1abc9c;
+  position: relative; }
+  .u--70:after {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    content: "70%"; }
+
+.u--80 {
+  width: 80%;
+  background: #2980b9;
+  position: relative; }
+  .u--80:after {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    content: "80%"; }
+
+.u--90 {
+  width: 90%;
+  background: #3498db;
+  position: relative; }
+  .u--90:after {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    content: "90%"; }
+
+.u--100 {
+  width: 100%;
+  background: #3498db;
+  position: relative; }
+  .u--100:after {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    content: "100%"; }
+
 /*
 * Components
 */
@@ -592,12 +677,14 @@ p {
   width: 100%;
   float: left;
   padding: 16px 0;
-  background: black; }
+  background: #000000; }
   .nav--footer {
-    background: grey; }
+    background: #cccccc; }
     @media only screen and (min-width: 60em) {
       .nav--footer__item a {
-        color: white; } }
+        color: #FFFFFF; } }
+    .nav--footer__item.active a {
+      color: #FFFFFF; }
   @media only screen and (min-width: 60em) {
     .nav {
       width: 50%;
@@ -616,12 +703,12 @@ p {
         margin-right: 10px;
         display: inline-block; } }
     .nav__item a {
-      color: white; }
+      color: #FFFFFF; }
       @media only screen and (min-width: 60em) {
         .nav__item a {
-          color: black; } }
+          color: #000000; } }
     .nav__item.active a {
-      color: orange; }
+      color: #f39c12; }
 
 .section {
   padding: 20px 10px; }
@@ -630,7 +717,8 @@ p {
       padding: 40px 20; } }
 
 .hero {
-  background: aliceBlue; }
+  background: #3498db;
+  color: #FFFFFF; }
 
 .header {
   padding: 10px 0 0; }
@@ -651,9 +739,20 @@ p {
 
 .footer {
   text-align: center;
-  background: grey;
+  background: #cccccc;
   color: white;
   padding: 20px 0; }
   @media only screen and (min-width: 60em) {
     .footer {
       text-align: left; } }
+
+.list {
+  text-align: left; }
+  .list--skills {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .list__item {
+    color: #000000;
+    margin-top: 10px;
+    text-align: left;
+    padding: 10px; }

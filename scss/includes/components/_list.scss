@@ -1,0 +1,15 @@
+.list {
+    text-align: left;
+
+    &--skills {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    &__item {
+        color: $color--black;
+        margin-top: 10px;
+        text-align: left;
+        padding: 10px;
+    }
+}
