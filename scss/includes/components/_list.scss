@@ -7,9 +7,11 @@
     }
 
     &__item {
-        color: $color--black;
+        font-family: 'avenir', sans-serif;
+        color: $color--white;
         margin-top: 10px;
         text-align: left;
         padding: 10px;
+        font-weight: bold;
     }
 }

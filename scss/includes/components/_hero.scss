@@ -1,4 +1,8 @@
 .hero {
     background: $color--blue;
     color: $color--white;
+
+    &__text {
+        max-width: 700px;
+    }
 }

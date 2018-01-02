@@ -34,7 +34,8 @@ $breakpoint-medium: "only screen and (min-width: 60em)";
 
 [class*='col-'] {
     float: left;
-    padding: $col-gutter;
+    padding-left: $col-gutter;
+    padding-right: $col-gutter;
     width: 100%;
     min-height: 1px;
 }

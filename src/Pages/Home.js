@@ -1,39 +1,47 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import Hero from '../Components/Hero';
 
-const Home = () => (
-    <div className="container">
-        <section class="section experience" id="experience">
-            <h2>Experience</h2>
-            <p>List of skills</p>
-            <ul class="list list--skills">
-                <li class="list__item u--70">Javascript</li>
-                <li class="list__item u--50">React</li>
-                <li class="list__item u--30">Angular</li>
-                <li class="list__item u--70">jQuery</li>
-                <li class="list__item u--80">CSS</li>
-                <li class="list__item u--80">SASS</li>
-                <li class="list__item u--60">LESS</li>
-                <li class="list__item u--40">Stylus</li>
-                <li class="list__item u--40">PHP</li>
-            </ul>
-        </section>
-        <section class="section projects" id="projects">
-            <h2>Projects</h2>
-            <div class="container">
-                <div class="row">
-                    <div class="col-4">
-                        project one
-                    </div>
-                    <div class="col-4">
-                        project one
-                    </div>
-                    <div class="col-4">
-                        project one
-                    </div>
+class Home extends Component {
+    render() {
+        return (
+            <section>
+                <Hero hero={this.props.hero[0]} />
+                <div className="container">
+                    <section className="section experience" id="experience">
+                        <h2>Skills &amp; Knowledge</h2>
+                        <p className="u--light">LESS, SASS, Stylus, React, React Native, Node, Node Express, Angular, Angular 2, JQuery, Nunjucks, Twig, Slim, Pug, Wordpress, Drupal, Swift</p>
+                        <ul className="list list--skills">
+                            <li className="list__item u--100 u--green">HTML5</li>
+                            <li className="list__item u--80 u--turqoise">Javascript</li>
+                            <li className="list__item u--90 u--orange">CSS</li>
+                            <li className="list__item u--40 u--yellow">PHP</li>
+                        </ul>
+                    </section>
+                    <section className="section projects" id="projects">
+                        <h2>Projects</h2>
+                        <div className="row">
+                            <div className="media col-4">
+                                <img src="https://dummyimage.com/400x200/aaa/000" className="media__image"/>
+                                <p>lorem ipsum asdasd asdasd asdad asdad as da asda sadad asda asd</p>
+                                <Link to="/projects" className="media__link">Read more</Link>
+                            </div>
+                            <div className="media col-4">
+                            <img src="https://dummyimage.com/400x200/aaa/000" className="media__image"/>
+                                <p>ipsum dolor sit amet, consectetur adipisicing elit. Dolorem asperiores, neque odio provident a mollitia voluptatum</p>
+                                <Link to="/projects" className="media__link">Read more</Link>
+                            </div>
+                            <div className="media col-4">
+                                <img src="https://dummyimage.com/400x200/aaa/000" className="media__image"/>
+                                <p>ipsum dolor sit amet, consectetur adipisicing elit. Dolorem asperiores, neque odio provident a mollitia voluptatum</p>
+                                <Link to="/projects" className="media__link">Read more</Link>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-            </div>
-        </section>
-    </div>
-)
+            </section>
+        )
+    }
+}
 
 export default Home;

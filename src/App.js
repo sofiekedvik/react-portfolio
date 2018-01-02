@@ -11,8 +11,8 @@ class App extends Component {
             hero: [
                 {
                     id: 1,
-                    heading: 'Welcome to my Place',
-                    text: 'This is where I have all my portfolio stuff'
+                    heading: 'Front-end development & App Design',
+                    text: 'lorem ipsum '
                 },
                 {
                     id: 2,
@@ -53,15 +53,7 @@ class App extends Component {
         return (
             <div className="App">
                 <Header changeHero={this.changeHero} heroNumber={status.heroNumber}></Header>
-                <section className="section hero">
-                    <div className="container">
-                        <h1>{status.hero[status.heroNumber].heading}</h1>
-                        <p>
-                        {status.hero[status.heroNumber].text}
-                        </p>
-                    </div>
-                </section>
-                <Main />
+                <Main hero={status.hero}/>
                 <Footer changeHero={this.changeHero} heroNumber={status.heroNumber}></Footer>
             </div>
         );

@@ -5,6 +5,11 @@ html, body {
     line-height: $line-height--normal;
 }
 
+h1, h2, h3, h4, h5 {
+    font-family: $font-family--heading;
+    margin-bottom: 20px;
+}
+
 .h1, h1 { @include font-size($font-size--large) }
 .h2, h2 { @include font-size($font-size--medium) }
 .h3, h3 { @include font-size($font-size--small) }

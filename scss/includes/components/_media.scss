@@ -1,0 +1,14 @@
+.media {
+    &__image {
+        margin-bottom: 10px;
+        height: 200px;
+    }
+
+    a.media__link {
+        color: $color--turqoise;
+        &:hover {
+            color: $color--blue;
+        }
+
+    }
+}

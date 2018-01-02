@@ -3,13 +3,19 @@ import { Switch, Route } from 'react-router-dom';
 import About from '../Pages/About';
 import Home from '../Pages/Home';
 
-const Main = () => (
-    <main className="section">
-        <Switch>
-            <Route exact path='/' component={Home}/>
-            <Route path='/about' component={About}/>
-        </Switch>
-    </main>
-)
+class Main extends Component {
+    render() {
+        return (
+            <main className="section">
+                <Switch>
+                    <Route exact path='/' render={(props) => (
+                        <Home hero={this.props.hero}/> )} />
+                    <Route path='/about' render={(props) => (
+                        <About hero={this.props.hero}/> )} />
+                </Switch>
+            </main>
+        )
+    }
+}
 
 export default Main;
